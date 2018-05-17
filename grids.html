@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grids</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .page {
+            max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+            position: relative;
+            border: dashed 1px black;
+        }
+
+        .container {
+            height: 100vh;
+            /* float: left; */
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -1;
+
+        }
+
+        .container:after {
+            display: table;
+            clear: both;
+            content: '';
+        }
+
+        .container>div {
+            height: 100%;
+            width: calc((100% - 20px * 8) / 8);
+            margin: 0 10px;
+            background-color: antiquewhite;
+            border: solid 1px black;
+        }
+
+        .container>div {
+            float: left;
+        }
+
+        .container>div:last-child {
+            float: right;
+        }
+
+        .wrapper {
+            margin-top: 40px;
+        }
+
+        .wrapper>div {
+            border: 1px solid black;
+            height: 60px;
+        }
+
+        .wrapper--float>div {
+            float: left;
+        }
+        .wrapper--float:after {
+            display: table;
+            clear: both;
+            content: '';
+        }
+        
+        .wrapper--float>div:last-child {
+            float: right;
+        }
+
+        .wrapper--inline-block {
+            font-size: 0;
+        }
+
+        .wrapper--inline-block>div {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .menu {
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color: rgba(0, 255, 255, 0.5);
+        }
+
+        .main {
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color: rgba(209, 69, 69, 0.671);
+        }
+
+        .sidebar {
+            width: 100%;
+            padding-right: 10px;
+            padding-left: 10px;
+            background-color: rgba(137, 43, 226, 0.507);
+        }
+
+        .wrapper--flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 700px) {
+            .menu {
+                width: 100%;
+            }
+
+            .main {
+                width: calc(100%/8*5);
+
+            }
+
+            .sidebar {
+                width: calc(100%/8*3);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .menu {
+                width: calc(100%/4);
+            }
+
+            .main {
+                width: calc(100%/2);
+                ;
+
+            }
+
+            .sidebar {
+                width: calc(100%/4);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="wrapper wrapper--float">
+            <div class="menu">inline-block</div>
+            <div class="main">inline-block</div>
+            <div class="sidebar">inline-block</div>
+        </div>
+        <div class="wrapper wrapper--inline-block">
+            <div class="menu">inline-block</div>
+            <div class="main">inline-block</div>
+            <div class="sidebar">inline-block</div>
+        </div>
+        <div class="wrapper wrapper--flex">
+            <div class="menu">flex</div>
+            <div class="main">flex</div>
+            <div class="sidebar">flex</div>
+        </div>
+        <div class="container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
