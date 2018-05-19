@@ -1,5 +1,5 @@
-.greed {
-    max-width: calc(100% - $gutter * 2);
+.grid {
+    max-width: calc(100% - 60px);
     margin-left: auto;
     margin-right: auto;
     &\--fluid {

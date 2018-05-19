@@ -1,22 +1,23 @@
-[class*="greed__col-"] {
+[class*="grid__col-"] {
     float: left;
     padding-right: $gutter;
 
     &:last-child {
         padding-right: 0;
+        float: right;
     }
 }
 
 
 @for $i from 1 through 12 {
-    .greed__col-#{$i} {
+    .grid__col-#{$i} {
         width: 8.3333% * $i;
     }
 }
 
 @media (min-width: 540px) {
     @for $i from 1 through 12 {
-        .greed__col-sm-#{$i} {
+        .grid__col-sm-#{$i} {
             width: 8.3333% * $i;
         }
     }
@@ -24,7 +25,7 @@
 
 @media (min-width: 720px) {
     @for $i from 1 through 12 {
-        .greed__col-md-#{$i} {
+        .grid__col-md-#{$i} {
             width: 8.3333% * $i;
         }
     }
@@ -32,7 +33,7 @@
 
 @media (min-width: 960px) {
     @for $i from 1 through 12 {
-        .greed__col-lg-#{$i} {
+        .grid__col-lg-#{$i} {
             width: 8.3333% * $i;
         }
     }
@@ -40,7 +41,7 @@
 
 @media (min-width: 1140px) {
     @for $i from 1 through 3 {
-        .greed__col-xl-#{$i} {
+        .grid__col-xl-#{$i} {
             width: 8.3333% * $i;
         }
     }

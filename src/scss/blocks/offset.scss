@@ -1,5 +1,5 @@
 @for $i from 1 through 11 {
-    .offset-#{$i} {
+    .grid__offset-#{$i} {
         margin-left: 8.3333% * $i;
     }
 }
@@ -7,7 +7,7 @@
 @media (min-width: 540px) {
     margin-left: 0;
     @for $i from 1 through 12 {
-        .offset-sm-#{$i} {
+        .grid__offset-sm-#{$i} {
             margin-left: 8.3333% * $i;
         }
     }
@@ -16,7 +16,7 @@
 @media (min-width: 720px) {
     margin-left: 0;
     @for $i from 1 through 12 {
-        .offset-md-#{$i} {
+        .grid__offset-md-#{$i} {
             margin-left: 8.3333% * $i;
         }
     }
@@ -25,7 +25,7 @@
 @media (min-width: 960px) {
     margin-left: 0;
     @for $i from 1 through 12 {
-        .offset-lg-#{$i} {
+        .grid__offset-lg-#{$i} {
             margin-left: 8.3333% * $i;
         }
     }
@@ -34,7 +34,7 @@
 @media (min-width: 1140px) {
     margin-left: 0;
     @for $i from 1 through 3 {
-        .offset-xl-#{$i} {
+        .grid__offset-xl-#{$i} {
             margin-left: 8.3333% * $i;
         }
     }
