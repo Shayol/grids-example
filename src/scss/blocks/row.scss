@@ -1,0 +1,7 @@
+
+
+.greed__row::after {
+    display: table;
+    clear: both;
+    content: '';
+}
