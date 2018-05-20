@@ -1,3 +1,4 @@
-.greed__no-gutters>[class*="grid__col-"] {
-    $gutter: 0;
+.grid__no-gutters>[class*="grid__col-"] {
+    padding-right: 0;
+    padding-left:  0;
 }
