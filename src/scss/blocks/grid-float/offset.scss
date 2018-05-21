@@ -6,7 +6,7 @@
 
 @media (min-width: 576px) {
     margin-left: 0;
-    @for $i from 1 through 12 {
+    @for $i from 1 through 11 {
         .grid__offset-sm-#{$i} {
             margin-left: 8.3333% * $i;
         }
@@ -15,7 +15,7 @@
 
 @media (min-width: 768px) {
     margin-left: 0;
-    @for $i from 1 through 12 {
+    @for $i from 1 through 11 {
         .grid__offset-md-#{$i} {
             margin-left: 8.3333% * $i;
         }
@@ -24,7 +24,7 @@
 
 @media (min-width: 992px) {
     margin-left: 0;
-    @for $i from 1 through 12 {
+    @for $i from 1 through 11 {
         .grid__offset-lg-#{$i} {
             margin-left: 8.3333% * $i;
         }
@@ -33,7 +33,7 @@
 
 @media (min-width: 1200px) {
     margin-left: 0;
-    @for $i from 1 through 3 {
+    @for $i from 1 through 11 {
         .grid__offset-xl-#{$i} {
             margin-left: 8.3333% * $i;
         }

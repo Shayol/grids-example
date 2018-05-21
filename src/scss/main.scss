@@ -1,6 +1,18 @@
 @import "common";
-@import "blocks/grid";
-@import "blocks/row";
-@import "blocks/col";
-@import "blocks/offset";
-@import "blocks/no-gutters";
+@import "blocks/grid-float/grid";
+@import "blocks/grid-float/row";
+@import "blocks/grid-float/col";
+@import "blocks/grid-float/offset";
+@import "blocks/grid-float/no-gutters";
+
+@import "blocks/grid-inline/grid";
+@import "blocks/grid-inline/row";
+@import "blocks/grid-inline/col";
+@import "blocks/grid-inline/offset";
+@import "blocks/grid-inline/no-gutters";
+
+@import "blocks/grid-flexbox/grid";
+@import "blocks/grid-float/row";
+@import "blocks/grid-flexbox/col";
+@import "blocks/grid-flexbox/offset";
+@import "blocks/grid-flexbox/no-gutters";

@@ -1,0 +1,49 @@
+.grid-inline {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    h5 {
+        font-size: 26px;
+    }
+    h6 {
+        font-size: 24px;
+    }
+
+
+
+
+    @media (min-width: 576px) {
+       max-width: 540px;
+    } 
+    @media (min-width: 768px) {
+       max-width: 720px;
+    } 
+    @media (min-width: 992px) {
+       max-width: 960px;
+    }
+    @media (min-width: 1200px) {
+       max-width: 1140px;
+    }
+
+}
+
+

@@ -1,0 +1,47 @@
+[class*="grid-inline__col-"] {
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 32px;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+@for $i from 1 through 12 {
+    .grid-inline__col-#{$i} {
+        width: 8.3333% * $i;
+    }
+}
+
+@media (min-width: 576px) {
+    @for $i from 1 through 12 {
+        .grid-inline__col-sm-#{$i} {
+            width: 8.3333% * $i;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    @for $i from 1 through 12 {
+        .grid-inline__col-md-#{$i} {
+            width: 8.3333% * $i;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    @for $i from 1 through 12 {
+        .grid-inline__col-lg-#{$i} {
+            width: 8.3333% * $i;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    @for $i from 1 through 12 {
+        .grid-inline__col-xl-#{$i} {
+            width: 8.3333% * $i;
+        }
+    }
+}

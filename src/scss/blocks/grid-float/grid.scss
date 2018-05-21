@@ -1,5 +1,5 @@
 .grid {
-    max-width: 100%;
+    // min-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: $gutter;
@@ -34,15 +34,15 @@
         font-size: 24px;
     }
     @media (min-width: 576px) {
-        min-width: 540px;
+        max-width: 540px;
     } // Medium devices (tablets, 768px and up)
     @media (min-width: 768px) {
-        min-width: 720px;
+        max-width: 720px;
     } // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-        min-width: 960px;
+        max-width: 960px;
     } // Extra large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
-        min-width: 1140px;
+        max-width: 1140px;
     }
 }
