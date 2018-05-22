@@ -4,35 +4,11 @@
     margin-right: auto;
     padding-left: $gutter;
     padding-right: $gutter;
-    line-height: 1.5;
-    font-size: 16px;
 
     &\--fluid {
         width: 100%;
     }
 
-    p {
-        font-size: 16px;
-    }
-
-    h1 {
-        font-size: 48px;
-    }
-    h2 {
-        font-size: 44px;
-    }
-    h3 {
-        font-size: 36px;
-    }
-    h4 {
-        font-size: 32px;
-    }
-    h5 {
-        font-size: 26px;
-    }
-    h6 {
-        font-size: 24px;
-    }
     @media (min-width: 576px) {
         max-width: 540px;
     } // Medium devices (tablets, 768px and up)

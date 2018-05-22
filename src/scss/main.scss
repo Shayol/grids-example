@@ -12,7 +12,9 @@
 @import "blocks/grid-inline/no-gutters";
 
 @import "blocks/grid-flexbox/grid";
-@import "blocks/grid-float/row";
+@import "blocks/grid-flexbox/row";
 @import "blocks/grid-flexbox/col";
 @import "blocks/grid-flexbox/offset";
 @import "blocks/grid-flexbox/no-gutters";
+
+@import "blocks/grid-css/grid";

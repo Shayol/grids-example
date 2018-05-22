@@ -6,60 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Grid</title>
-    <style>
-        [class*="col-"] {
-            border: 1px solid black;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="grid">
-        <div class="grid__row">
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
-            <div class="grid__col-1">col-1</div>
+    <!-- css grid -->
+    <div class="grid-css">
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+        <div class="grid-css__col"></div>
+    </div>
+    <!-- float columns with gutters -->
+    <div class="wrapper">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+                <div class="grid__col-1">col-1</div>
+            </div>
+            <!-- float grid no gutters -->
+            <div class="grid__row grid__no-gutters">
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+                <div class="grid__col-1">col-1-no-gutter</div>
+            </div>
         </div>
-        <div class="grid__row grid__no-gutters">
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
-            <div class="grid__col-1">col-1-no-gutter</div>
+
+        <!-- inline-grid has fixed 10px width columns -->
+        <div class="grid-inline">
+            <div class="grid-inline__row">
+                <div class="grid-inline__col-10">
+                    <div class="inside-col">inline</div>
+                </div>
+                <div class="grid-inline__col-3">
+                    <div class="inside-col">inline</div>
+                </div>
+
+                <div class="grid-inline__col-5">
+                    <div class="inside-col">inline</div>
+                </div>
+                <div class="grid-inline__col-9">
+                    <div class="inside-col">inline</div>
+                </div>
+                <div class="grid-inline__col-6">
+                    <div class="inside-col">inline</div>
+                </div>
+            </div>
+        </div>
+        <!-- flexbox coumn where number corresponds to how much space 
+        coumn will take up - grid-flexbox__col-2 twice as much as gird-flexbox__col-1 - 2 out of 3 and 1 out of 3 -->
+        <div class="grid-flexbox">
+            <div class="grid-flexbox__row">
+                <div class="grid-flexbox__col-2">flexbox 2</div>
+                <div class="grid-flexbox__col-1">flexbox 1</div>
+            </div>
         </div>
     </div>
-    <div class="grid-inline">
-        <div class="grid-inline__row">
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-            <div class="grid-inline__col-1">inline</div>
-        </div>
-    </div>
+
 </body>
 
 </html>

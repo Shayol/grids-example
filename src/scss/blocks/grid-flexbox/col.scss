@@ -1,0 +1,7 @@
+//number after col is th width of column in relation to others
+
+@for $i from 1 through 30 {
+    .grid-flexbox__col-#{$i} {
+        flex-grow: $i;
+    }
+}
